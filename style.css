@@ -1,0 +1,17 @@
+html {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(./imgs/Ohio-Art-Etch-A-Sketch-Screen-in-Toy-Story-2-6-800x450.jpg);
+    background-size: contain;
+}
+
+body {
+    width: 85vw;
+    height: 93vh;
+    background: oldlace;
+}
