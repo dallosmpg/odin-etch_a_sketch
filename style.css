@@ -45,3 +45,7 @@ body {
     
     text-align: center;
   }
+
+.reset {
+    grid-column: span 16;
+}
