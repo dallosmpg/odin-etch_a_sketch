@@ -40,7 +40,7 @@ function colorOnHover(e) {
 
 function red() {
     returnDivElements().forEach(element => element.addEventListener('mouseenter', colorOnHover));
-    returnDivElements().forEach(element => element.addEventListener('touchstart', colorOnHover));
+    returnDivElements().forEach(element => element.addEventListener('touchmove', colorOnHover));
 };
 
 createDivSquares();
