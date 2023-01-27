@@ -18,7 +18,7 @@ body {
 
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: 75px 1fr;
+    grid-template-rows: auto auto 1fr;
     justify-items: center;
     align-items: center;
     align-content: space-between;
@@ -30,11 +30,15 @@ body {
 .content__wrapper > * {
     margin: 1rem;
 }
-.content__wrapper h1 {
+.content__wrapper h1, .content__wrapper p {
     grid-column: span 2;
     font-family: monospace;
+    margin: .3rem;
+}
+.content__wrapper h1 {
     font-size: 2.1rem;
     font-weight: 700;
+
 }
 
 .div-container {
@@ -63,6 +67,7 @@ body {
     padding: .2rem;
     border: 1px solid black;    
     text-align: center;
+    cursor: crosshair;
   }
 
 .menu__wrapper {
