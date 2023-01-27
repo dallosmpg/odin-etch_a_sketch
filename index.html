@@ -5,15 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resetStyle.css">
     <link rel="stylesheet" href="./style.css">
     <title>Odin // Etch-a-Sketch</title>
 </head>
 
 
 <body>
-
-    <div class="div-container">
-        <button class="reset">Reset color & reassign squares</button>
+    <div class="content__wrapper">
+        <h1>Etch-a-Sketch</h1>
+        
+        <div class="menu__wrapper">
+            <h3>Settings & reset</h3>
+            <div class="reset-board__wrapper"><button class="reset">Reset board</button></div>
+            <div class="reset-color-size__wrapper">
+                <label for="newSize">New size of the board:</label>
+                <input type="number" name="newSize" id="newSize" value="16" max="70" min="10">
+                <button class="reset-color-size">Reset board and size</button>
+            </div>
+            <div class="set-new-color__wrapper">
+                <label for="newColor">New color:</label>
+                <input type="color" name="newColor" id="newColor">
+                <button class="set-new-color">Set new color</button>
+            </div>
+        </div>
+        <div class="div-container"></div>
     </div>
 
     <script src="./script.js"></script>
